@@ -10,7 +10,7 @@ if ($result)
  while ($row = mysql_fetch_array($result)) 
 	{
 	print "<b>Name:</b>";
-	print $row["name"];
+	print $row["names"];
 	print "<br>\n";
 	print "<b>Location:</b>";
 	print $row["location"];
