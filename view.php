@@ -7,7 +7,7 @@
 $result = mysql_query("select * from guestbook");
 if ($result)
 {
-	while ($row = mysql_fetch_array($result)) 
+ while ($row = mysql_fetch_array($result)) 
 	{
 	print "<b>Name:</b>";
 	print $row["name"];
@@ -27,7 +27,7 @@ if ($result)
 	print "<br>\n";
 	print "<br>\n";
 	}
-	mysql_free_result($result);
+ mysql_free_result($result);
 }
 ?>
 
