@@ -1,0 +1,14 @@
+mysql logins:
+mysql -u root -p 
+no password needed for root by default.
+
+PHP script to login to the mysql database 
+<?php
+        if (!($mylink = mysql_connect("localhost","root","")))
+        {
+           print "<h3>could not connect to database</h3>\n";
+           exit;
+        }
+        echo "DB conection succesful";
+        mysql_select_db("gbook");
+?>
